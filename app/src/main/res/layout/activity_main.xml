@@ -15,7 +15,7 @@
         android:textSize="40dp"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/obrazek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/obraz" />
@@ -49,7 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="ZAPISZ"
-            android:backgroundTint="#008080"/>
+            android:backgroundTint="#008080"
+            android:onClick="usunObrazek"/>
     </LinearLayout>
 
     <TextView

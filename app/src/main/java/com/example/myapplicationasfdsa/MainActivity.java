@@ -9,12 +9,15 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int polub = 0;
     TextView textView;
+    View widok;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         textView = findViewById(R.id.polubiac);
+        widok = findViewById(R.id.obrazek);
     }
 
     public void dodajLike(View view) {
@@ -25,5 +28,9 @@ public class MainActivity extends AppCompatActivity {
     public void usunLike(View view) {
         polub--;
         textView.setText(polub+" Polubień");
+    }
+
+    public void usunObrazek(View view) {
+        widok.setVisibility(View.INVISIBLE);
     }
 }
